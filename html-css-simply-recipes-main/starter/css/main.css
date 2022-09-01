@@ -421,3 +421,62 @@ Navbar
     margin-bottom: 0;
   }
 }
+
+.recipes-container {
+  display: grid;
+  gap: 2rem 1rem;
+  border: 3px solid red;
+}
+
+.tags-container {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  border: 3px solid yellowgreen;
+}
+
+.recipes-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+  border: 4px solid burlywood;
+}
+
+.tags-container h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.tags-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid purple;
+}
+
+.tags-list a {
+  text-transform: capitalize;
+  display: block;
+  color: var(--grey-500);
+  transition: var(--transition);
+}
+
+.tags-list a:hover {
+  color: var(--primary-500);
+}
+
+.recipe {
+  display: block;
+}
+
+.recipe-img {
+  height: 15rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+
+.recipe h5 {
+  margin-bottom: 0;
+  color: var(--grey-700);
+  line-height: 1;
+}
