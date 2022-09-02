@@ -268,7 +268,7 @@ Navbar
 
 .nav-center {
   width: 100vw;
-  max-width: var(--max-width);
+  max-width: 1400px;
 }
 
 .nav-header {
@@ -284,7 +284,7 @@ Navbar
 }
 
 .nav-header img {
-  width: 200px;
+  width: 250px;
 }
 
 .nav-btn {
@@ -314,6 +314,7 @@ Navbar
   color: var(--grey-900);
   padding: 1rem 0;
   border-top: 1px solid var(--grey-500);
+  font-size: 1.25rem;
 }
 
 .nav-link:hover {
@@ -331,6 +332,7 @@ Navbar
 
   .navbar {
     height: 6rem;
+    margin-top: 1rem;
   }
 
   .nav-center {
@@ -354,7 +356,7 @@ Navbar
     padding: 0;
     border-top: none;
     margin-right: 1rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .contact-link {
@@ -365,7 +367,7 @@ Navbar
 
 .page {
   width: 90vw;
-  max-width: var(--max-width);
+  max-width: 1400px;
   margin: 0 auto;
   padding-top: 2rem;
   min-height: calc(100vh - (6rem + 4rem));
@@ -425,7 +427,6 @@ Navbar
 .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  border: 3px solid red;
 }
 
 .tags-container {
@@ -433,14 +434,12 @@ Navbar
   display: flex;
   flex-direction: column;
   padding-bottom: 3rem;
-  border: 3px solid yellowgreen;
 }
 
 .recipes-list {
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 3rem;
-  border: 4px solid burlywood;
 }
 
 .tags-container h4 {
@@ -451,7 +450,6 @@ Navbar
 .tags-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 3px solid purple;
 }
 
 .tags-list a {
@@ -479,4 +477,51 @@ Navbar
   margin-bottom: 0;
   color: var(--grey-700);
   line-height: 1;
+}
+
+.recipe p {
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 0.5rem;
+  color: var(--grey-500);
+  letter-spacing: var(--letterSpacing);
+}
+
+@media screen and (min-width: 576px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipe-img {
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recipes-container {
+    grid-template-columns: 200px 1fr;
+    gap: 5rem;
+  }
+
+  .recipe p {
+    font-style: 0.85rem;
+  }
+
+  .tags-container {
+    order: 0;
+  }
+
+  .tags-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .recipe h5 {
+    font-style: 1.15rem;
+  }
 }
